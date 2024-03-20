@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import java.lang.reflect.Proxy;
+import java.util.List;
 import java.util.Optional;
 
 public class Main {
@@ -24,8 +25,10 @@ public class Main {
             UserMapper userMapper = new UserMapper(companyMapper);
             UserService service = new UserService(repository, userMapper);
 
-            Optional<UserDto> byId = service.findById(2);
-            byId.ifPresent(System.out::println);
+            List<UserDto> all = service.findAll();
+            System.out.println(all);
+
+
 
 
             session.getTransaction().commit();
