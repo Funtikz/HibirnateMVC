@@ -11,8 +11,11 @@
     <property name="format_sql">true</property>
     <property name="show_sql">true</property>
     <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-    <mapping class="Entity.User"/>
-    <mapping class="Entity.Company"/>
+
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="entity.User"/>
+    <mapping class="entity.Company"/>
+
 
 
   </session-factory>

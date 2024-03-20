@@ -1,10 +1,9 @@
 package org.example;
 
-import Entity.Company;
-import Entity.User;
-import UtilityOpen.HibernateUtil;
+import entity.Company;
+import entity.User;
+import utilityOpen.HibernateUtil;
 import junit.framework.TestCase;
-import lombok.var;
 import org.hibernate.Session;
 
 import org.hibernate.SessionFactory;

@@ -1,4 +1,4 @@
-package UtilityOpen;
+package utilityOpen;
 
 import lombok.experimental.UtilityClass;
 import org.hibernate.SessionFactory;
